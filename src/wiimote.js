@@ -53,12 +53,21 @@ export default class WIIMote{
 
     // Initiliase the Wiimote
     initiateDevice(){
-        this.device.open().then(() => {
-            this.sendReport(ReportMode.STATUS_INFO_REQ, [0x00])
-            this.setDataTracking(DataReportMode.CORE_BUTTONS)
 
-            this.device.oninputreport = (e) => this.listener(e);
-        })
+        this.device.open();
+        // this.sendReport(ReportMode.STATUS_INFO_REQ, [0x00])
+        // this.setDataTracking(DataReportMode.CORE_BUTTONS)
+
+        // this.device.oninputreport = (e) => this.listener(e);
+
+        // this.device.open().then(() => {
+
+        // return ;
+        //     this.sendReport(ReportMode.STATUS_INFO_REQ, [0x00])
+        //     this.setDataTracking(DataReportMode.CORE_BUTTONS)
+
+        //     this.device.oninputreport = (e) => this.listener(e);
+        // })
     }
 
     initiateIR(dataType = IRDataType.EXTENDED, sensitivity = IRSensitivity.LEVEL_3, sensitivityBlock = IRSensitivity.BLOCK_3 ){

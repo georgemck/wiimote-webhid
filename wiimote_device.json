@@ -1,0 +1,26 @@
+{
+    "device": {},
+    "buttonStatus": {
+        "DPAD_LEFT": false,
+        "DPAD_RIGHT": false,
+        "DPAD_DOWN": false,
+        "DPAD_UP": false,
+        "PLUS": false,
+        "TWO": false,
+        "ONE": false,
+        "B": false,
+        "A": false,
+        "MINUS": false,
+        "HOME": false
+    },
+    "ledStatus": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "rumblingStatus": false,
+    "IrListener": null,
+    "AccListener": null,
+    "BtnListener": null
+}
